@@ -5,16 +5,16 @@ const scenes = {
   start: {
     title: "Žaidimo pradžia",
     text: "Pradėjote dirbti X įmonėje. Tai jūsų pirmoji darbo diena.",
-    image: "",
-    imageAlt: "",
+    image: "assets/images/projects-Girteka.jpg",
+    imageAlt: "Logistikos įmonės aplinka",
     choices: [{ text: "Pradėti žaidimą", next: "first_day" }]
   },
 
   first_day: {
     title: "Pirmoji darbo diena",
     text: "Atėjote prie savo transporto priemonės. Ką darote?",
-    image: "",
-    imageAlt: "",
+    image: "assets/images/GIRTEKA-HR-2545-scaled-1.jpg",
+    imageAlt: "Sunkvežimis prieš kelionę",
     choices: [
       { text: "Apžiūrėti transporto priemonę", next: "inspect_vehicle" },
       { text: "Iš karto važiuoti", next: "drive_now" },
@@ -25,8 +25,8 @@ const scenes = {
   inspect_vehicle: {
     title: "Transporto priemonės apžiūra",
     text: "Pastebite, kad viena padanga atrodo šiek tiek nuleista. Ką darote?",
-    image: "",
-    imageAlt: "",
+    image: "assets/images/vairuotojas.jpeg",
+    imageAlt: "Vairuotojas atlieka patikrą",
     choices: [
       { text: "Pranešti vadovui", next: "good_ending" },
       { text: "Ignoruoti problemą", next: "bad_ending" },
@@ -37,8 +37,8 @@ const scenes = {
   drive_now: {
     title: "Kelionės pradžia",
     text: "Pradedate važiuoti, bet netrukus pajuntate, kad transporto priemonė juda nestabiliai.",
-    image: "",
-    imageAlt: "",
+    image: "assets/images/GIRTEKA-Volvo-Electric-1266-scaled-1.jpg",
+    imageAlt: "Sunkvežimis kelyje",
     choices: [
       { text: "Sustoti šalikelėje", next: "good_ending" },
       { text: "Važiuoti toliau", next: "bad_ending" },
@@ -49,8 +49,8 @@ const scenes = {
   call_manager: {
     title: "Skambutis vadovui",
     text: "Vadovas pasako, kad pirmiausia turėtumėte atlikti transporto priemonės patikrą.",
-    image: "",
-    imageAlt: "",
+    image: "assets/images/vairuotojas.jpeg",
+    imageAlt: "Skambutis vadovui dėl transporto",
     choices: [
       { text: "Atlikti patikrą", next: "inspect_vehicle" },
       { text: "Nepaisyti patarimo", next: "drive_now" }
